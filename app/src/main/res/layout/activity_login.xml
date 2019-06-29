@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dexter.mystyle.activity.LoginActivity"
+    android:background="@drawable/login_gradient_background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/login_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/login_logo"
+            android:layout_marginLeft="110dp"
+            android:layout_marginRight="110dp"
+            android:layout_marginTop="150dp"/>
+
+        <TextView
+            android:id="@+id/business_motto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/business_motto"
+            android:textColor="#fff"
+            android:layout_below="@+id/login_logo"
+            android:textAlignment="center"
+            android:fontFamily="@font/quicksand_regular"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <Button
+            android:id="@+id/consumerSignIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:text="Sign In"
+            android:fontFamily="@font/quicksand_bold"
+            android:background="@drawable/sigin_button_background"
+            android:layout_marginTop="100dp"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            android:layout_below="@+id/business_motto"/>
+
+        <TextView
+            android:id="@+id/orLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="OR"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/consumerSignIn"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:fontFamily="@font/quicksand_regular"/>
+
+        <Button
+            android:id="@+id/sellerSigIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:text="Sign In As Seller"
+            android:fontFamily="@font/quicksand_bold"
+            android:background="@drawable/sigin_button_background"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            android:layout_below="@+id/orLabel"/>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
